@@ -1,0 +1,16 @@
+#python to be implemented in 3D Slicer python interpreter intially
+
+import numpy as np
+import os
+
+#we need name of label map
+label_vol_name_0 = input('label volume name:')
+
+label_vol_arr_0 = slicer.util.array(label_vol_name_0)
+
+print "Dimensions of input label volume array:"
+np.shape(label_vol_arr_0)
+
+print "Maximum element value of input label volume array:"
+np.max(label_vol_arr_0)
+
